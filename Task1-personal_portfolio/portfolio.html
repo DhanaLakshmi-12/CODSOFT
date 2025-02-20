@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Personal Portfolio website</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/fe879f6aba.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="images/logo1.png" class="logo">
+                    <ul id="sidemenu">
+                        <li>
+                            <a href="#header">Home</a>
+                            <a href="#About">About</a>
+                            <a href="#services">Services</a>
+                            <a href="#portfolio">Portfolio</a>
+                            <a href="#contact">Contact</a>
+                        </li>
+                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <p>Computer Science Student</p>
+                    <h1>Hi! I'm <span>Dhana Lakshmi</span><br> From Guntur</h1>
+                </div>
+            </div>
+        </div>
+        <!--------------------------------about----------------->
+
+        <div id="About">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/myphoto.jpg">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>Hello!I'm Dhana Lakshmi a final year Computer Science Student at VVIT,Guntur.I have 75% in acadamics.
+                            I want to secure an opportunity in IT sector.My skills include Frontend Development,Web Designing and Mobile App Development.
+                            Secure a responsible career opportunity to fully utilize my training and skills, while making a significant contribution to the success of the company.</p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('internships')">Internships</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tabs" id="skills">
+                            <ul>
+                                <li><span>WEB DEVELOPMENT</span><br>web app development</li>
+                                <li><span>App development</span><br>mobile application development</li>
+                                <li><span>Full stack development</span><br>java full stack development</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="internships">
+                            <ul>
+                                <li><span>Mobile Application Development</span><br>Certified Mobile App Development-Elewayte</li>
+                                <li><span>Java Full Stack</span><br>Wipro TalentNext Certified for Java Full Stack</li>
+                                <li><span>Data Engineering</span><br>Data Engineering Certification from AICTE</li>
+                                <li><span>AI-ML</span><br>AWS-AI-ML certification from AICTE</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2025</span><br>B.Tech from Vasireddy Venkatadri Institute of Technology Guntur</B></li>
+                                <li><span>2022</span><br>Diploma from MBTS govt polytechnic Guntur</li>
+                                <li><span>2019</span><br>SSC from Sri Chaitanya Vidhya Vihar Guntur</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!---------services----------->
+
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Web Design</h2>
+                        <p>Web development is the process of building, programming, and maintaining websites and web applications. 
+                            Website developers use various programming languages, like HTML, CSS, and JavaScript, to develop websites and web applications.</p>
+                        <a href="#">learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-app-store"></i>
+                        <h2>App Design</h2>
+                        <p>Application development, or app development, is the process of planning, designing, creating, testing, and deploying an application to perform various business operations.
+                             It can be done by massive organizations with large teams working on projects or by a single freelance developer</p>
+                        <a href="#">learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-stack-overflow"></i>
+                        <h2>Full Stack</h2>
+                        <p>Full stack development is the process of developing both the frontend and backend of applications. 
+                            Any application has a frontend (user-facing) component and a backend (database and logic) component. 
+                            The frontend contains the user interface and code related to user interactions with the application. 
+                            The backend contains all the code required for the application to run, including integrations with data systems, communicating with other applications, and processing data.</p>
+                        <a href="#">learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!----------potfolio------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work.png">
+                    <div class="layer">
+                        <h3>Portfolio website</h3>
+                        <p>Directed to my portfolio website.It consists all information about myself.You can also download my resume in that website.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Contact App</h3>
+                        <p>A Mobile Application for contact details.We can see name,phone number,email address in that app.It is easy to use
+                            .And it is similar to our contact app which we are using in our mobile phones.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>online shopping App</h3>
+                        <p>The app connects you to the talented people in the world.Download it from play store.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!-----------contact------------>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>dhanalakshmiammu7@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>6303383895</p>
+                    <div class="social-icons">
+                        <a href="#https://www.linkedin.com/feed/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                    <a href="Resume.pdf" class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @ Dhana Lakshmi.Made with<i class="fa-solid fa-heart"></i> by Easy Tutorials. </p>
+        </div>
+    </div>
+
+        <script>
+            var tablinks=document.getElementsByClassName("tab-links");
+            var tabcontents=document.getElementsByClassName("tab-contents");
+            function opentab(tabname)
+            {
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tabs");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tabs");
+            }
+        </script>
+        <script>
+            var sidemenu=document.getElementById("sidemenu");
+            function openmenu(){
+                sidemenu.style.right="0";
+            }
+            function closemenu(){
+                sidemenu.style.right="-200px";
+            }
+        </script>
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbwErUhxSqYdbywRDeCJB1ZIcwpsUh_RCvgxhicShgu2Vbf78UgsJJTDBi-vfcT8mgJg/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg=document.getElementById("msg")
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML="Message sent successfully"
+                    setTimeout(function(){
+                        msg.innerHTML=""
+                    },5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+    </body>
+</html>

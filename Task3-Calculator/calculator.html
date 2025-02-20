@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Simple Calculator </title>
+<style>
+    body{
+        background-color: rgba(111, 24, 192, 0.692);
+    }
+    
+#clear{  
+       width: 40px;   
+       border-radius: 3px;    
+       background-color:rgb(29, 206, 82);  
+}  
+#calc{  
+    width:130px;  
+    border-radius: 4px; 
+    padding: 10px;  
+    margin: auto;
+    background-color: brown;
+}  
+.formstyle  
+{  
+width: 180px;  
+height: 400 px;  
+margin: auto;  
+border: 4px solid black;  
+border-radius: 5px;  
+padding: 10px; 
+background-color:rgba(156, 0, 73, 0.692); 
+}  
+</style>
+</head>
+<body>
+ <center>
+    <h1>Calculator</h1>
+    <div>
+ <div class="formstyle">
+ <form name="form1">
+ <input id="calc" type="text" name="answer" /><br><br>
+ <input id="clear" type="button" value="(" onclick = "form1.answer.value += '(' "/>
+ <input id="clear" type="button" value="ce" onclick ="back()"/>
+ <input id="clear" type="button" value=")" onclick = "form1.answer.value += ')' " />
+ <input id="clear" type="button" value="C" onclick = "clr()" /><br>
+ <input id="clear" type="button" value="1" onclick = "form1.answer.value += '1' " />
+ <input id="clear" type="button" value="2" onclick = "form1.answer.value += '2' "/>
+ <input id="clear" type="button" value="3" onclick = "form1.answer.value += '3' "/>
+ <input id="clear" type="button" value="+" onclick = "form1.answer.value += '+' " /><br>
+ <input id="clear" type="button" value="4" onclick = "form1.answer.value += '4' " />
+ <input id="clear" type="button" value="5" onclick = "form1.answer.value += '5' " />
+ <input id="clear" type="button" value="6" onclick = "form1.answer.value += '6' "/>
+ <input id="clear" type="button" value="-" onclick = "form1.answer.value += '-' "/><br>
+ <input id="clear" type="button" value="7" onclick = "form1.answer.value += '7' "/>
+ <input id="clear" type="button" value="8" onclick = "form1.answer.value += '8' "/>
+ <input id="clear" type="button" value="9" onclick = "form1.answer.value += '9' " />
+ <input id="clear" type="button" value="*" onclick = "form1.answer.value += '*' " /><br>
+ <input id="clear" type="button" value="." onclick = "form1.answer.value += '.' "/>
+ <input id="clear" type="button" value="0" onclick = "form1.answer.value += '0' "/>
+ <input id="clear" type="button" value="=" onclick = "form1.answer.value = eval(form1.answer.value) "/>
+ <input id="clear" type="button" value="/" onclick = "form1.answer.value += '/' " />
+ </div>
+ </form>
+ <script language="javascript" type="text/javascript">
+    function clr()
+    {
+        document.getElementById('calc').value="";
+    }
+    function back()
+    {
+        form1.answer.value=form1.answer.value.substring(0,form1.answer.value.length-1);
+    }
+    
+ </script> 
+</div>
+ </center>
+ </body>
+ </html>
